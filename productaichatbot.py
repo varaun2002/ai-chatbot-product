@@ -3,7 +3,7 @@ import pandas as pd
 import re
 
 # Load the dataset from an Excel file
-df = pd.read_excel(excel-path)
+df = pd.read_excel('pricelist.xlsx')
 
 # Define the AI chatbot function
 def chatbot(product_query):
