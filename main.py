@@ -2,10 +2,7 @@ import streamlit as st
 import re
 import pandas as pd
 
-def process_text(input_text):
-    return len(input_text)\
-
-df=pd.read_excel("../AIChatbotProduct/pricelist.xlsx")    
+df=pd.read_excel("pricelist.xlsx")    
 
 def chatbot(product_query):
     # Filter the dataset based on the user query
@@ -30,7 +27,7 @@ def chatbot(product_query):
 
 
 def main():
-    st.title("Text Processing App")
+    st.title("AI Chatbot for Product Information")
     
     # Text input
     input_text = st.text_input("Enter text")
